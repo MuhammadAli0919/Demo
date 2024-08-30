@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced E-Commerce Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>E-Commerce Platform</h1>
+            <ul>
+                <li><a href="#furniture">Furniture Store</a></li>
+                <li><a href="#construction">Building Construction</a></li>
+                <li><a href="#architecture">Architectural Design</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="furniture">
+            <h2>Furniture Store</h2>
+            <p>Explore our wide range of furniture for every room in your home. Choose from various categories like living room, bedroom, kitchen, and office. Purchase standalone items or opt for tailored bundles.</p>
+            <div id="furniture-container">
+                <!-- Products will be injected here by JavaScript -->
+            </div>
+            <button onclick="showAllFurniture()">View All Furniture</button>
+        </section>
+
+        <section id="construction">
+            <h2>Building Construction</h2>
+            <p>From residential to commercial and industrial projects, we offer a range of construction packages. Browse through our offerings or request a custom quote tailored to your needs.</p>
+            <div id="construction-container">
+                <!-- Construction packages will be injected here by JavaScript -->
+            </div>
+            <button onclick="requestQuote()">Request a Quote</button>
+        </section>
+
+        <section id="architecture">
+            <h2>Architectural Design</h2>
+            <p>Hire experienced architects for custom home designs, renovation plans, and interior design services. Take advantage of virtual consultations, 3D rendering, and augmented reality tools.</p>
+            <div id="architecture-container">
+                <!-- Design services will be injected here by JavaScript -->
+            </div>
+            <button onclick="scheduleConsultation()">Schedule a Consultation</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Platform</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
