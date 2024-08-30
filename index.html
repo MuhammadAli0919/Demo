@@ -3,55 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced E-Commerce Platform</title>
+    <title>Modern Furniture Store</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header with Search Bar -->
     <header>
+        <div class="logo">Furniture Store</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for furniture...">
+            <button type="submit">Search</button>
+        </div>
         <nav>
-            <h1>E-Commerce Platform</h1>
-            <ul>
-                <li><a href="#furniture">Furniture Store</a></li>
-                <li><a href="#construction">Building Construction</a></li>
-                <li><a href="#architecture">Architectural Design</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Sign In</a>
         </nav>
     </header>
 
-    <main>
-        <section id="furniture">
-            <h2>Furniture Store</h2>
-            <p>Explore our wide range of furniture for every room in your home. Choose from various categories like living room, bedroom, kitchen, and office. Purchase standalone items or opt for tailored bundles.</p>
-            <div id="furniture-container">
-                <!-- Products will be injected here by JavaScript -->
-            </div>
-            <button onclick="showAllFurniture()">View All Furniture</button>
-        </section>
+    <!-- Main Banner with 3D Animation -->
+    <section class="main-banner">
+        <div class="banner-content">
+            <h1>Modern Furniture for Every Room</h1>
+            <p>Explore our latest collections for your living room, bedroom, office, and more!</p>
+        </div>
+        
+    </section>
 
-        <section id="construction">
-            <h2>Building Construction</h2>
-            <p>From residential to commercial and industrial projects, we offer a range of construction packages. Browse through our offerings or request a custom quote tailored to your needs.</p>
-            <div id="construction-container">
-                <!-- Construction packages will be injected here by JavaScript -->
-            </div>
-            <button onclick="requestQuote()">Request a Quote</button>
-        </section>
+    <!-- Furniture Categories -->
+    <section class="categories">
+        <div class="category">
+            <img src="living-room.jpg" alt="Living Room">
+            <h2>Living Room</h2>
+        </div>
+        <div class="category">
+            <img src="bedroom.jpg" alt="Bedroom">
+            <h2>Bedroom</h2>
+        </div>
+        <div class="category">
+            <img src="kitchen.jpg" alt="Kitchen">
+            <h2>Kitchen</h2>
+        </div>
+        <div class="category">
+            <img src="office.jpg" alt="Office">
+            <h2>Office</h2>
+        </div>
+    </section>
 
-        <section id="architecture">
-            <h2>Architectural Design</h2>
-            <p>Hire experienced architects for custom home designs, renovation plans, and interior design services. Take advantage of virtual consultations, 3D rendering, and augmented reality tools.</p>
-            <div id="architecture-container">
-                <!-- Design services will be injected here by JavaScript -->
-            </div>
-            <button onclick="scheduleConsultation()">Schedule a Consultation</button>
-        </section>
-    </main>
-
+    <!-- Footer with Newsletter Sign Up -->
     <footer>
-        <p>&copy; 2024 E-Commerce Platform</p>
+        <div class="newsletter">
+            <h3>Sign Up for Our Newsletter</h3><br>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Sign Up</button>
+        </div><br>
+        <nav class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
     </footer>
-
-    <script src="data.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

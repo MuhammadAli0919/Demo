@@ -1,101 +1,128 @@
-body {
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+}
+
+body {
     background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-}
-
-nav {
+    background-color: #fff;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav h1 {
-    margin: 0;
-    font-size: 1.5em;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.search-bar {
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
 }
 
-nav ul li {
-    margin: 0 15px;
+.search-bar input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 300px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-section h2 {
-    margin-top: 0;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
+.search-bar button {
+    background-color: #333;
+    color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Navigation */
+nav a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.product, .package, .design {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px 0;
+/* Main Banner */
+.main-banner {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #050505;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.product img, .package img, .design img {
+.banner-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.banner-animation {
+    margin-top: 20px;
+    /* Add 3D animation or WebGL canvas here */
+}
+
+/* Categories */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.product h3, .package h3, .design h3 {
-    margin: 10px 0 5px;
+.category h2 {
+    margin-top: 10px;
 }
 
-.product p, .package p, .design p {
-    margin: 0;
-}
-
+/* Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0a500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
 }
